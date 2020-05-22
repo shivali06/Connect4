@@ -4,28 +4,6 @@
 ;;;
 ;;; Part of connect4.lisp
 
-
-
-;; ----------------------------------------------- SAMPLE DATA FOR TESTING -----------------------------------------------
-; Uncomment a line to debug. This just sets some "realistic" values for the global game variables.
-;(setf game '())
-;(setf game '((1 1 0) (1 2 1) (2 1 0) (2 2 1)))
-;(setf game '((1 1 0) (1 2 1) (2 1 0) (2 2 1) (2 3 0) (2 4 1) (2 5 0) (2 6 1) (2 7 0) (3 1 1)))
-;(setf game '((1 1 0) (2 1 1) (3 1 0) (4 1 1) (5 1 0) (6 1 1) (7 1 0)))
-
-; Check for "blocking" for ai-move-hard
-;(setf game '((1 1 1) (7 1 0) (2 1 1) (6 1 0) (3 1 1)))
-;(setf game '((7 1 1) (2 1 0) (6 1 1) (3 1 0) (5 1 1)))
-;(setf game '((6 1 1) (2 1 0) (5 1 1) (2 2 0) (4 1 1)))
-;(setf game '((5 1 1) (2 1 0) (4 1 1) (2 2 0) (3 1 1) (5 2 1) (2 1 0) (4 2 1) (2 2 0) (3 2 1) (3 3 1) (4 3 1) (5 3 1)))
-;(setf game '((1 1 1) (2 1 1) (3 1 1) (4 2 0) (1 2 1) (2 2 1) (3 2 0) (4 2 1) (1 3 1) (2 3 1) (3 3 1) (4 1 0) (4 2 1) (4 3 0) (1 4 1) (2 4 1) (3 4 0) (1 5 1)))
-;(setf game '((1 3 1) (1 2 1) (1 1 1) (1 2 1) (2 2 1) (3 2 0) (4 2 1) (2 3 1) (3 3 1) (4 1 0) (4 2 1) (4 3 0) (1 4 1) (2 4 1) (3 4 0))) ; Contains invalid moves.
-
-; More game move setups...
-;(setf game '((1 1 0) (1 2 1) (2 1 0) (2 2 1) (2 3 3) (2 4 1) (2 5 0) (10 6 1) (2 7 0) (2 9 1)))  ; Contains invalid moves.
-;(setf game '((12 1 0) (1 22 1) (1 1 0) (2 2 1) (2 1 0) (2 4 1) (2 5 7) (2 6 1) (2 7 0) (2 8 1))) ; Contains invalid moves.
-;(setf game '((0 0 0) (1 2 1) (2 1 0) (2 2 1) (2 3 0) (2 4 1) (2 5 0) (2 6 1) (2 7 0) (2 8 1)))   ; Contains invalid moves.
-
 ;(setf difficulty 0) ; For easy difficulty
 ;(setf difficulty 1) ; For intermediate difficulty
 ;(setf difficulty 2) ; For hard difficulty
